@@ -53,7 +53,7 @@ All feature extractors we use and their pretrained weights are shown below, you 
 - **ULIP**：pointbert v2, you can find the repository [here](https://github.com/salesforce/ULIP) and you can download the weight we use [here](https://storage.cloud.google.com/sfr-ulip-code-release-research/pretrained_models/ckpt_zero-sho_classification/pointbert_ULIP-2.pt)
 
 
-The weights for projectors are already placed in `checkpoints`, the following link is used as a backup:
+The weights for projectors are already in `checkpoints`, the following links are used as a backup:
 
 - **Ex-CLAP**: [Google_Drive](https://drive.google.com/file/d/19GNAZi_A7Zqb8ZfDkvo4yIpKinQ-1Sme/view?usp=sharing)
 - **Ex-ULIP**: [Google_Drive](https://drive.google.com/file/d/16QtRCn3U-kfU_xtE0mdYp0fFznJc59F3/view?usp=sharing)
@@ -150,7 +150,7 @@ If you find this proiect useful in our research, please consider giving a star :
 }
 ```
 
-lf you have any questions or suggestions, feel free to drop us an email ( wangzehan01@zju.edu.cn, ziangzhang@zju.edu.cn )or open an issue.
+lf you have any questions or suggestions, feel free to drop us an email ( wangzehan01@zju.edu.cn, ziangzhang@zju.edu.cn ) or open an issue.
 
 ### Acknowledgement 
 Thanks to the open source of the following projects:
