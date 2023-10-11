@@ -1,20 +1,22 @@
 from exmcr.exmcr_model import Ex_MCR
 from exmcr.exmcr_model import ModalityType, MCRType
+import torch
 
-input = {ModalityType.VISION: ['assets/c8b68cf87c994eeb99e8bbcc5ce84c4e.jpeg',
-                               'assets/b21b9753332d4e46a3deee2b0151bd8e.jpeg',
-                               'assets/0b76d30d697d4488bd35dee187d95fac.jpeg'],
+input = {ModalityType.VISION: ['assets/toilet.jpeg',
+                               'assets/dog.jpeg',
+                               'assets/helicopter.jpeg'],
          ModalityType.TEXT: ['Someone is using the toilet.',
                              'The dog snarled at us.',
                              'The helicopter is circling overhead.'],
-         ModalityType.AUDIO:['assets/AagLJkfrFMk.wav',
-                             'assets/0yxEvdnimGg.wav',
-                             'assets/KvrcRMfFzOE.wav'],
-         ModalityType.PC:['assets/b3d1ab7790954d18a46ad83c8c0c3594.npy',
-                          'assets/78d6a35f0ecf4cf69ae9271f28f5f137.npy',
-                          'assets/c2dca5937bf6488ea938ea9a6dbe96ba.npy']
+         ModalityType.AUDIO:['assets/toilet.wav',
+                             'assets/dog.wav',
+                             'assets/helicopter.wav'],
+         ModalityType.PC:['assets/toilet.npy',
+                          'assets/dog.npy',
+                          'assets/helicopter.npy']
          }
 
+device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 model = Ex_MCR(device='cuda:3')
 
 # v_emb = model.get_vision_embedding(input)
