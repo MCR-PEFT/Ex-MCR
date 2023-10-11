@@ -41,7 +41,7 @@ conda activate exmcr
 pip install -r requirements.txt
 ```
 
-For inferencing, you should put pretrained weights in directory `checkpoints`, as below:
+For inferencing, you need to create the `checkpoints` diretory and put pretrained weights in it, as below:
 ```
 -checkpoints
 	ex_clap.pt
