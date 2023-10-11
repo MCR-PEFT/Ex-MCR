@@ -22,16 +22,16 @@ todo
 ### Feature Extractor
 feature extractor we use:
 
-CLIP：vit/B-32, you can find the repository ![here](https://huggingface.co/openai/clip-vit-base-patch32)
+CLIP：vit/B-32, you can find the repository [here](https://huggingface.co/openai/clip-vit-base-patch32)
 
-CLAP：LAION_AI/CLAP 630k-fusion-best.pt, you can find the repository ![here](https://github.com/LAION-AI/CLAP) and you can download the weight we use ![here](https://huggingface.co/lukewys/laion_clap/blob/main/630k-fusion-best.pt).
+CLAP：LAION_AI/CLAP 630k-fusion-best.pt, you can find the repository [here](https://github.com/LAION-AI/CLAP) and you can download the weight we use [here](https://huggingface.co/lukewys/laion_clap/blob/main/630k-fusion-best.pt).
 
-ULIP：pointbert v2, you can find the repository ![here](https://github.com/salesforce/ULIP) and you can download the weight we use ![here](https://storage.cloud.google.com/sfr-ulip-code-release-research/pretrained_models/ckpt_zero-sho_classification/pointbert_ULIP-2.pt)
+ULIP：pointbert v2, you can find the repository [here](https://github.com/salesforce/ULIP) and you can download the weight we use [here](https://storage.cloud.google.com/sfr-ulip-code-release-research/pretrained_models/ckpt_zero-sho_classification/pointbert_ULIP-2.pt)
 
 
 ### Pretrained Weights of Projectors
-Ex-CLAP: ![Google_Drive](https://drive.google.com/file/d/19GNAZi_A7Zqb8ZfDkvo4yIpKinQ-1Sme/view?usp=sharing)
-Ex-ULIP: ![Google_Drive](https://drive.google.com/file/d/16QtRCn3U-kfU_xtE0mdYp0fFznJc59F3/view?usp=sharing)
+Ex-CLAP: [Google_Drive](https://drive.google.com/file/d/19GNAZi_A7Zqb8ZfDkvo4yIpKinQ-1Sme/view?usp=sharing)
+Ex-ULIP: [Google_Drive](https://drive.google.com/file/d/16QtRCn3U-kfU_xtE0mdYp0fFznJc59F3/view?usp=sharing)
 
 ### Install enviornments
 
