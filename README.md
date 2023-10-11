@@ -14,7 +14,7 @@ This implementation provides 3D-image-text-audio unified contrastive representat
 - [10/11/2023] Source Code of C-MCR has been released! [[code](https://github.com/MCR-PEFT/C-MCR)]
 
 
-## File structure:
+## File structure
 ```
 -assets
 	[demo samples, including image, audio and 3d model]
