@@ -29,7 +29,7 @@ CLAP：LAION_AI/CLAP 630k-fusion-best.pt, you can find the repository [here](htt
 ULIP：pointbert v2, you can find the repository [here](https://github.com/salesforce/ULIP) and you can download the weight we use [here](https://storage.cloud.google.com/sfr-ulip-code-release-research/pretrained_models/ckpt_zero-sho_classification/pointbert_ULIP-2.pt)
 
 
-### Pretrained Weights of Projectors
+### Pretrained Weights for Projectors
 Ex-CLAP: [Google_Drive](https://drive.google.com/file/d/19GNAZi_A7Zqb8ZfDkvo4yIpKinQ-1Sme/view?usp=sharing)
 Ex-ULIP: [Google_Drive](https://drive.google.com/file/d/16QtRCn3U-kfU_xtE0mdYp0fFznJc59F3/view?usp=sharing)
 
