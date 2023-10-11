@@ -11,12 +11,11 @@ todo
 -checkpoints
 	[weight of clip,clap,ulip and ex-mcr_clap, ex-mcr_ulip]
 -exmcr
-	-models
-		- ULIP [source code of ULIP]
-		exmcr_projector.py [the projector of ex-mcr]
-		exmcr_trunks.py [feature extractor of clip, clap and ulip]
-		exmcr_model.py [combine projector and trunks together with useful functions]
-		type.py
+	- ULIP [source code of ULIP]
+	exmcr_projector.py [the projector of ex-mcr]
+	exmcr_trunks.py [feature extractor of clip, clap and ulip]
+	exmcr_model.py [combine projector and trunks together with useful functions]
+	type.py
 		
 ```
 
