@@ -17,7 +17,9 @@ input = {ModalityType.VISION: ['assets/toilet.jpeg',
          }
 
 device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
-model = Ex_MCR(device='cuda:3')
+model = Ex_MCR(device=device)
+
+# you can get single modality embeddings by using these functions
 
 # v_emb = model.get_vision_embedding(input)
 # t_emb = model.get_text_embedding(input)
@@ -31,16 +33,19 @@ t_emb = output[ModalityType.TEXT]
 a_emb = output[ModalityType.AUDIO]
 p_emb = output[ModalityType.PC]
 
+print('Audio-Vision Results')
 sim = a_emb @ v_emb.T
 print(sim)
 logits = sim.argmax(dim=-1)
 print(logits)
 
+print('3D-Text Results')
 sim = p_emb @ t_emb.T
 print(sim)
 logits = sim.argmax(dim=-1)
 print(logits)
 
+print('Audio-3D Results')
 sim = a_emb @ p_emb.T
 print(sim)
 logits = sim.argmax(dim=-1)
