@@ -57,10 +57,26 @@ python inference.py
 ### TODO
 
 - [x] Install environments(CLIP, CLAP, ULIP, KNN, librosa, torch, torchvision, torchaudio, numpy, Ninja)
+- [ ] News
 - [ ] What is Ex-MCR
-- [ ] How to Use
-- [ ] License
-- [ ] Citation
+- [x] How to Use
+- [x] Citation
 
 
+### Citation
+If you find this proiect useful in vour research, please consider cite:
+```
+@misc{wang2023connecting,
+      title={Connecting Multi-modal Contrastive Representations}, 
+      author={Zehan Wang and Yang Zhao and Xize Cheng and Haifeng Huang and Jiageng Liu and Li Tang and Linjun Li and Yongqi Wang and Aoxiong Yin and Ziang Zhang and Zhou Zhao},
+      year={2023},
+      eprint={2305.14381},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+```
 
+lf you have any questions or suggestions, feel free to drop us an email ( wangzehan01@zju.edu.cn, ziangzhang_vsama@qq.com )or open an issue.
+
+### Acknowledgement 
+Thanks to the open source of the following projects:[CLIP](https://huggingface.co/openai/clip-vit-base-patch32), [CLAP](https://github.com/LAION-AI/CLAP), [ULIP](https://github.com/salesforce/ULIP), [Imagebind](https://github.com/facebookresearch/ImageBind).
