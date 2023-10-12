@@ -1,17 +1,18 @@
 # Ex-MCR: Extending Multi-modal Contrastive Representation
 
-Zehan Wang*, Ziang Zhang*, Luping Liu, Yang Zhao, Haifeng Huang, Tao Jin, Zhou Zhao*
+Zehan Wang*, Ziang Zhang*, Luping Liu, Yang Zhao, Haifeng Huang, Tao Jin, Zhou Zhao†
 
 Ex-MCR is a training-efficient and paired-data-free method to flexibly learn unified contrastive representation space, by integrating the knowledge of existing MCR spaces.
 
-This implementation provides 3D-image-text-audio unified contrastive representation, obtained by aligning the representation spaces of CLAP (audio-text) and ULIP v2 (3D-vision) into the CLIP (vision-text).
+This implementation provides 3D-image-text-audio unified contrastive representation, obtained by aligning the representation spaces of CLAP (audio-text) and ULIP v2 (3D-image) into the CLIP (image-text).
 
 ![pipeline](./pipeline.png)
 
 ## News
 
-- [09/22/2023] C-MCR has been accepted by NIPS 2023!🔥🔥🔥 [[paper](https://arxiv.org/abs/2305.14381)]
 - [10/11/2023] Source Code of C-MCR has been released! [[code](https://github.com/MCR-PEFT/C-MCR)]
+- [09/22/2023] C-MCR has been accepted by NIPS 2023!🔥🔥🔥 [[paper](https://arxiv.org/abs/2305.14381)]
+
 
 
 ## File structure
@@ -42,7 +43,7 @@ All feature extractors we use and their pretrained weights are shown below. You 
 
 - **CLIP**：vit/B-32, you can find the repository [here](https://huggingface.co/openai/clip-vit-base-patch32)
 - **CLAP**：LAION_AI/CLAP 630k-fusion-best.pt, you can find the repository [here](https://github.com/LAION-AI/CLAP) and you can download the weight we use [here](https://huggingface.co/lukewys/laion_clap/blob/main/630k-fusion-best.pt).
-- **ULIP**：pointbert v2, you can find the repository [here](https://github.com/salesforce/ULIP) and you can download the weight we use [here](https://storage.cloud.google.com/sfr-ulip-code-release-research/pretrained_models/ckpt_zero-sho_classification/pointbert_ULIP-2.pt)
+- **ULIP-2**：pointbert, you can find the repository [here](https://github.com/salesforce/ULIP) and you can download the weight we use [here](https://storage.cloud.google.com/sfr-ulip-code-release-research/pretrained_models/ckpt_zero-sho_classification/pointbert_ULIP-2.pt)
 
 
 The final structure of `checkpoints` looks like this:
@@ -143,11 +144,7 @@ print(
 
 ## TODO
 
-- [x] Install environments
-- [x] News
-- [x] brief introduction for Ex-MCR
-- [x] Usage
-- [x] Citation
+- [x] Pre-trained Ex-MCR for ULIP-2, CLIP, CLAP (Unified 3D-image-text-audio representations)
 - [ ] Code for training
 - [x] Code for inference
 
