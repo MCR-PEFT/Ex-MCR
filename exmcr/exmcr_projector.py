@@ -5,14 +5,6 @@ import torch.nn.functional as F
 
 from tqdm import tqdm
 
-# from clap_src.clap_module import create_model
-# from clap_src.training.data import get_audio_features
-# from clap_src.training.data import int16_to_float32, float32_to_int16
-
-# from transformers import RobertaTokenizer
-# from clap_src.clap_module.factory import load_state_dict
-# from clap_src.clap_module.htsat import create_htsat_model
-# from clap_src.clap_module.model import CLAPAudioCfp
 import copy
 
 def get_activation(activation):

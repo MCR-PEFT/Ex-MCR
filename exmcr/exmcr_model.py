@@ -6,7 +6,7 @@ from torch import nn, Tensor
 import torch.nn.functional as F
 
 from exmcr.exmcr_projector import Ex_MCR_Head
-from exmcr.exmcr_trunks import Trunk
+from exmcr.trunks import Trunk
 
 from exmcr.type import ModalityType, MCRType
 
