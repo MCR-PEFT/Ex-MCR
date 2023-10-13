@@ -94,6 +94,9 @@ class Trunk:
         self.clip_extractor.to(device)
         # self.clip_processor.to(device)
         self.device = device
+        self.ulip_extractor.eval()
+        self.clap_extractor.eval()
+        self.clip_extractor.eval()
         
         
     def extract_feature_from_input(self, input: dict):
@@ -133,17 +136,17 @@ class Trunk:
         # print(pcd_feature.shape)
         return F.normalize(pcd_feature, dim=-1)
 
-def get_clap_extractor():
+def get_clap_extractor() -> nn.Module:
     model = laion_clap.CLAP_Module(enable_fusion=True, device='cpu')
     model.load_ckpt(CLAP_DIR)
     return model
 
-def get_clip_extractor():
+def get_clip_extractor() -> nn.Module:
     clip_model = CLIPModel.from_pretrained(CLIP_DIR)
     processor  = CLIPProcessor.from_pretrained(CLIP_DIR)
     return clip_model, processor
 
-def get_ulip_extractor():
+def get_ulip_extractor() -> nn.Module:
     parser = argparse.ArgumentParser('ULIP training and evaluation', parents=[get_args_parser()])
     args = parser.parse_args()
 

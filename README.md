@@ -24,7 +24,7 @@ This implementation provides 3D-image-text-audio unified contrastive representat
 -exmcr
 	- ULIP [source code of ULIP]
 	exmcr_projector.py [the projector of ex-mcr]
-	exmcr_trunks.py [feature extractor of clip, clap and ulip]
+	trunks.py [feature extractor of clip, clap and ulip]
 	exmcr_model.py [combine projector and trunks together with useful functions]
 	type.py
 		

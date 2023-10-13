@@ -29,7 +29,7 @@ def get_clones(module: nn.Module, N):
 
 class MLP(nn.Module):
     def __init__(
-        self, channel=512, res_expansion=1.0, layer_num=2, bias=True, activation='relu'):
+        self, channel=512, res_expansion=1.0, bias=True, activation='relu'):
         super().__init__()
         self.act = get_activation(activation)
         self.net1 = nn.Sequential(
@@ -73,32 +73,6 @@ class Projector(torch.nn.Module):
     def get_device(self):
         return next(self.parameters()).device
 
-class Projector_single(torch.nn.Module):
-    def __init__(self, init_mode):
-        super(Projector_single, self).__init__()
- 
-        self.mlp1 = MLP(res_expansion=2)
-
-        self.init_weights(init_mode)
-
-    def forward(self, embs):
-        embs = self.mlp1(embs)
-        return F.normalize(embs, dim=-1)
-
-    def init_weights(self, mode):
-        # initialize transformer
-        if mode == 'eye':
-            for m in self.parameters():
-                if m.dim() > 1:
-                    nn.init.eye_(m)
-        elif mode == 'xav':
-            for m in self.parameters():
-                if m.dim() > 1:
-                    nn.init.xavier_uniform_(m)
-    
-    def get_device(self):
-        return next(self.parameters()).device
-
 class Ex_MCR_Head(torch.nn.Module):
     def __init__(self):
         super(Ex_MCR_Head, self).__init__()
@@ -111,23 +85,3 @@ class Ex_MCR_Head(torch.nn.Module):
 
     def get_device(self):
         return next(self.parameters()).device
-    
-class C_MCR(torch.nn.Module):
-    def __init__(self):
-        super(C_MCR, self).__init__()
-        self.Head_A = Projector_single('xav')
-        self.Head_B = Projector_single('xav')
-
-    def get_device(self):
-        return next(self.parameters()).device
-    
-    def init_weights(self, mode):
-        # initialize transformer
-        if mode == 'eye':
-            for m in self.parameters():
-                if m.dim() > 1:
-                    nn.init.eye_(m)
-        elif mode == 'xav':
-            for m in self.parameters():
-                if m.dim() > 1:
-                    nn.init.xavier_uniform_(m)

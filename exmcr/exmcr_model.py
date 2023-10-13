@@ -29,6 +29,8 @@ class Ex_MCR():
         heads[MCRType.ULIP].load_state_dict(torch.load(EX_ULIP, map_location='cpu'))
         heads[MCRType.CLAP].to(device)
         heads[MCRType.ULIP].to(device)
+        heads[MCRType.CLAP].eval()
+        heads[MCRType.ULIP].eval()
         return heads
     
     @torch.no_grad()
