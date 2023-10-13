@@ -20,7 +20,7 @@ This implementation provides 3D-image-text-audio unified contrastive representat
 -assets
 	[demo samples, including image, audio and 3d model]
 -checkpoints
-	[weight of clip,clap,ulip and ex-mcr_clap, ex-mcr_ulip]
+	[pretrained weights for clip,clap,ulip and ex-mcr_clap, ex-mcr_ulip]
 -exmcr
 	- ULIP [source code of ULIP]
 	exmcr_projector.py [the projector of ex-mcr]
