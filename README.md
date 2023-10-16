@@ -10,6 +10,7 @@ This implementation provides 3D-image-text-audio unified contrastive representat
 
 ## News
 
+- [10/16/2023] Ex-MCR has been released! [[paper](https://arxiv.org/abs/2310.08884)]
 - [10/11/2023] Source Code of C-MCR has been released! [[code](https://github.com/MCR-PEFT/C-MCR)]
 - [09/22/2023] C-MCR has been accepted by NIPS 2023!🔥🔥🔥 [[paper](https://arxiv.org/abs/2305.14381)]
 
@@ -159,6 +160,14 @@ If you find this proiect useful in our research, please consider giving a star :
       eprint={2305.14381},
       archivePrefix={arXiv},
       primaryClass={cs.LG}
+}
+@misc{wang2023extending,
+      title={Extending Multi-modal Contrastive Representations}, 
+      author={Zehan Wang and Ziang Zhang and Luping Liu and Yang Zhao and Haifeng Huang and Tao Jin and Zhou Zhao},
+      year={2023},
+      eprint={2310.08884},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
 ```
 
